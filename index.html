@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conversions</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="icons8-calculator-64.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<h1>Measurement Conversion</h1>
+	<section id="length-conversion">
+	<h2>Length Conversion</h2>
+	<form id="length-form">
+		<label for="number-input-length">Enter a number:</label>
+		<input type="number" id="number-input-length" name="number-input-length" required>
+
+		<label for="from-unit">Convert from:</label>
+		<select id="from-unit-length" name="from-unit-length">
+			<option value="feet">Feet</option>
+			<option value="inches">Inches</option>
+			<option value="yards">Yards</option>
+			<option value="miles">Miles</option>
+		</select>
+
+		<label for="to-unit">Convert to:</label>
+		<select id="to-unit-length" name="to-unit-length">
+			<option value="inches">Inches</option>
+			<option value="feet">Feet</option>
+			<option value="yards">Yards</option>
+			<option value="miles">Miles</option>
+		</select>
+
+		<button type="button" id="convert-btn-length">Convert</button>
+	</form>
+	<p id="output1"></p>
+</section>
+
+<section id="speed-conversion">
+	<h2>Speed Conversion</h2>
+<form id="speed-form">
+	<label for="number-input-speed">Enter a number:</label>
+	<input type="number" id="number-input-speed" name="number-input-speed" required>
+
+	<label for="from-unit-speed">Convert from:</label>
+	<select id="from-unit-speed" name="from-unit-speed">
+		<option value="Miles Per Hour">Miles Per Hour</option>
+		<option value="Kilometers Per Hour">Kilometers Per Hour</option>
+	</select>
+
+	<label for="to-unit-speed">Convert to:</label>
+	<select id="to-unit-speed" name="to-unit-speed">
+		<option value="Kilometers Per Hour">Kilometers Per Hour</option>
+		<option value="Miles Per Hour">Miles Per Hour</option>
+	</select>
+
+	<button type="button" id="convert-btn-speed">Convert</button>
+</form>
+<p id="output2"></p>
+
+</section>
+
+<section id="time">
+	<h2>Time Conversion</h2>
+	<form id="time-form">
+		<label for="number-input-time">Enter a number:</label>
+		<input type="number" id="number-input-time" name="number-input-time" required>
+		<label for="from-unit-time">Convert from:</label>
+		<select id="from-unit-time" name="from-unit-time">
+			<option value="seconds">Seconds</option>
+			<option value="minutes">Minutes</option>
+			<option value="hours">Hours</option>
+			<option value="days">Days</option>
+		</select>
+
+		<label for="to-unit-time">Convert to:</label>
+	<select id="to-unit-time" name="to-unit-time">
+		<option value="minutes">Minutes</option>
+		<option value="seconds">Seconds</option>
+		<option value="hours">Hours</option>
+		<option value="days">Days</option>
+	</select>
+		<button type="button" id="convert-btn-time">Convert</button>
+	</form>
+	<p id="output3"></p>
+
+</section>
+<script src="script.js"></script>
+
+</body>
+</html>
